@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz2.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+    <script src="newQuiz.js" defer></script>
+    <!-- <script src="quiz2.js" defer></script> -->
+</head>
+
+<body>
+    <header class="header">
+        <nav class="container">
+            <h1>Quiz</h1>
+            <h2 class="display-section">let's play</h2>
+        </nav>
+        
+        <ul class="tracker">
+            <li data-question="1"> <a href="#">1</a></li>
+            <li data-question="2"> <a href="#">2</a></li>
+            <li data-question="3"> <a href="#">3</a></li>
+            <li data-question="4"> <a href="#">4</a></li>
+            <li data-question="5"> <a href="#">5</a></li>
+            <li data-question="6"> <a href="#">6</a></li>
+            <li data-question="7"> <a href="#">7</a></li>
+            <li data-question="8"> <a href="#">8</a></li>
+            <li data-question="9"> <a href="#">9</a></li>
+           <li data-question="10"> <a href="#">10</a></li>
+        </ul>
+
+        <div class="quiz-section">
+            <div id="quiz">
+                <h2 class="question" id="question">quiz question</h2>
+                <hr>
+                <div class="progress">
+                    <div id="myProgress">
+                        <div id="myBar"></div>
+                    </div>
+                    <h3 class="progressValue">0%</h3>
+                </div>
+                <ul class="options">
+                    <li> <input type="radio" name="answer" class="answer" id="a">
+                        <label for="a" id="option_1">quiz option</label>
+                    </li>
+                    <li> <input type="radio" name="answer" class="answer" id="b">
+                        <label for="b" id="option_2">quiz option</label>
+                    </li>
+                    <li> <input type="radio" name="answer" class="answer" id="c">
+                        <label for="c" id="option_3">quiz option</label>
+                    </li>
+                    <li> <input type="radio" name="answer" class="answer" id="d">
+                        <label for="d" id="option_4">quiz option</label>
+                    </li>
+                </ul>
+                <hr>
+                <div class="btn">
+                    <button type="submit" id="previous">PREVIOUS</button>
+                    <button type="submit" id="review">REVIEW</button>
+                    <button type="submit" id="submit">NEXT</button>
+                </div>
+            </div>
+        </div>
+        <div class="accept">
+            <div class="acceptance">
+                <div class="userName">
+                    <label for="username" class="user">User Name</label>
+                    <input type="text" name="username" required id="userInput" placeholder="Enter username" >
+                </div>
+                <ul class="set-option">
+                    <li> <input type="radio" name="choose" class="choose" id="setA">
+                        <label for="setA" id="setA">A</label>
+                    </li>
+                    <li> <input type="radio" name="choose" class="choose" id="setB">
+                        <label for="setB" id="setB">B</label>
+                    </li>
+                    <li> <input type="radio" name="choose" class="choose" id="setC">
+                        <label for="setC" id="setC">C</label>
+                    </li>
+                </ul>
+                <button type="submit" class="btn2">Submit</button>
+            </div>
+        </div>
+    </header>
+    
+</body>
+
+</html>
